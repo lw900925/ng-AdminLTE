@@ -1,0 +1,7 @@
+{
+  "bitwise" : false,
+  "curly" : false,
+  "eqeqeq" : true,
+  "undef" : true,
+  "asi" : true
+}

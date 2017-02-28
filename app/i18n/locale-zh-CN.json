@@ -1,0 +1,21 @@
+{
+  "LANGUAGE": "zh_CN",
+  "DATA_TABLES": {
+    "LANGUAGE_URL": "plugins/DataTables-1.10.13/i18n/lang-zh-CN.json"
+  },
+  "BOX_TITLE": {
+    "USER": "用户管理"
+  },
+  "LOGIN": {
+    "TITLE": "登录",
+    "BOX_MESSAGE": "登录后开始会话",
+    "FORM": {
+      "EMAIL": "电子邮箱",
+      "PASSWORD": "密码",
+      "REMEMBER_ME": "记住我",
+      "SUBMIT_BUTTON_TEXT": "登录"
+    },
+    "FORGOT_PASSWORD": "忘记密码",
+    "REGISTER": "注册新用户"
+  }
+}

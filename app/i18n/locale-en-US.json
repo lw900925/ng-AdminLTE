@@ -1,0 +1,21 @@
+{
+  "LANGUAGE": "en_US",
+  "DATA_TABLES": {
+    "LANGUAGE_URL": "plugins/DataTables-1.10.13/i18n/lang-en-US.json"
+  },
+  "BOX_TITLE": {
+    "USER": "User Management"
+  },
+  "LOGIN": {
+    "TITLE": "Login",
+    "BOX_MESSAGE": "Sign in to start your session",
+    "FORM": {
+      "EMAIL": "Email",
+      "PASSWORD": "Password",
+      "REMEMBER_ME": "Remember Me",
+      "SUBMIT_BUTTON_TEXT": "Sign In"
+    },
+    "FORGOT_PASSWORD": "I forgot my password",
+    "REGISTER": "Register a new membership"
+  }
+}
