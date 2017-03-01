@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app='ngAdminLTE'>
+<html ng-app='ngAdminLTEApp'>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,34 +38,8 @@
     <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="hold-transition skin-blue sidebar-mini" ng-controller="MainController">
-<div class="wrapper">
-    <header class="main-header" ng-include="'partials/layout/header.html'"></header>
-
-    <!-- Left side column. contains the logo and sidebar -->
-    <aside class="main-sidebar" ng-include="'partials/layout/sidebar.html'"></aside>
-
-    <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <section class="content-header">
-            <h1>
-                Dashboard
-                <small>Control panel</small>
-            </h1>
-            <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li class="active">Dashboard</li>
-            </ol>
-        </section>
-        <!-- Main content -->
-        <section class="content" ui-view></section>
-    </div>
-
-    <!-- /.content-wrapper -->
-    <footer class="main-footer" ng-include="'partials/layout/footer.html'"></footer>
-</div>
-<!-- ./wrapper -->
+<body class="hold-transition">
+<div ui-view></div>
 
 <!-- jQuery 2.2.3 -->
 <script src="lib/jQuery/jquery-2.2.3.min.js"></script>
@@ -110,5 +84,8 @@
 <!-- Angular App -->
 <script src="js/app.js"></script>
 <script src="js/services/resources.js"></script>
+<script src="js/controllers/login.js"></script>
+<script src="js/controllers/dashboard.js"></script>
+<script src="js/controllers/system/user.js"></script>
 </body>
 </html>

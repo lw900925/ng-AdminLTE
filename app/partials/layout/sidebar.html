@@ -7,11 +7,11 @@
         </div>
         <div class="pull-left info">
             <p>刘伟</p>
-            <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+            <a href="javascript:void(0)"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
     </div>
     <!-- search form -->
-    <form action="#" method="get" class="sidebar-form">
+    <form action="javascript:void(0)" method="get" class="sidebar-form">
         <div class="input-group">
             <input type="text" name="q" class="form-control" placeholder="Search...">
             <span class="input-group-btn">
@@ -25,9 +25,9 @@
 
     <!-- sidebar menu: : style can be found in sidebar.less -->
     <ul class="sidebar-menu">
-        <li class="header">MAIN NAVIGATION</li>
+        <li class="header">AdminLTE</li>
         <li ui-sref-active="active">
-            <a ui-sref="dashboard">
+            <a ui-sref="ngAdminLTE.dashboard">
                 <i class="fa fa-dashboard"></i> <span>仪表盘</span><span class="pull-right-container"></span>
             </a>
         </li>
@@ -40,8 +40,7 @@
                 </span>
             </a>
             <ul class="treeview-menu">
-                <li ui-sref-active="active"><a ui-sref="users"><i class="fa fa-user"></i>用户</a></li>
-                <li ui-sref-active="active"><a ui-sref="groups"><i class="fa fa-group"></i>组</a></li>
+                <li ui-sref-active="active"><a ui-sref="ngAdminLTE.user"><i class="fa fa-user"></i>用户</a></li>
             </ul>
         </li>
     </ul>

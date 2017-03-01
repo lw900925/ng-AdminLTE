@@ -1,10 +1,7 @@
 {
   "LANGUAGE": "zh_CN",
   "DATA_TABLES": {
-    "LANGUAGE_URL": "plugins/DataTables-1.10.13/i18n/lang-zh-CN.json"
-  },
-  "BOX_TITLE": {
-    "USER": "用户管理"
+    "LANGUAGE_URL": "lib/DataTables-1.10.13/i18n/lang-zh-CN.json"
   },
   "LOGIN": {
     "TITLE": "登录",
@@ -17,5 +14,14 @@
     },
     "FORGOT_PASSWORD": "忘记密码",
     "REGISTER": "注册新用户"
+  },
+  "USER": {
+    "TITLE": "用户管理",
+    "TABLE_HEADER": {
+      "ID": "#",
+      "USER_NAME": "用户名",
+      "EMAIL": "电子邮箱",
+      "CREATION_DATE": "创建日期"
+    }
   }
 }

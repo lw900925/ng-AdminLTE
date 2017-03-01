@@ -1,10 +1,7 @@
 {
   "LANGUAGE": "en_US",
   "DATA_TABLES": {
-    "LANGUAGE_URL": "plugins/DataTables-1.10.13/i18n/lang-en-US.json"
-  },
-  "BOX_TITLE": {
-    "USER": "User Management"
+    "LANGUAGE_URL": "lib/DataTables-1.10.13/i18n/lang-en-US.json"
   },
   "LOGIN": {
     "TITLE": "Login",
@@ -17,5 +14,14 @@
     },
     "FORGOT_PASSWORD": "I forgot my password",
     "REGISTER": "Register a new membership"
+  },
+  "USER": {
+    "TITLE": "User Management",
+    "TABLE_HEADER": {
+      "ID": "#",
+      "USER_NAME": "User Name",
+      "EMAIL": "Email",
+      "CREATION_DATE": "Creation Date"
+    }
   }
 }

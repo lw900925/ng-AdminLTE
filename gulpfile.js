@@ -77,7 +77,7 @@ gulp.task('build', ['clean'], function () {
 gulp.task('watch', ['build'], function () {
     gulp.watch('app/css/**/*.css', ['style']);
     gulp.watch('app/js/**/*.js', ['script']);
-    gulp.watch('app/partials/**/*.html', ['html']);
+    gulp.watch('app/**/*.html', ['html']);
     gulp.watch('app/img/**', ['image']);
     gulp.watch('app/i18n/*.json', ['i18n']);
 });
@@ -86,7 +86,7 @@ gulp.task('watch', ['build'], function () {
 gulp.task('server', ['watch'], function () {
     connect.server({
         root: 'dist',
-        port: 8080,
+        port: 8000,
         livereload: true
     });
 });
