@@ -1,4 +1,4 @@
 /node_modules
 .idea
-ng-AdminLTE.iml
+*.iml
 dist
