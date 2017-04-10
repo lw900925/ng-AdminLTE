@@ -28,19 +28,19 @@
         <li class="header">AdminLTE</li>
         <li ui-sref-active="active">
             <a ui-sref="ngAdminLTE.dashboard">
-                <i class="fa fa-dashboard"></i> <span>仪表盘</span><span class="pull-right-container"></span>
+                <i class="fa fa-dashboard"></i> <span translate="SIDEBAR.MENU.DASHBOARD"></span><span class="pull-right-container"></span>
             </a>
         </li>
         <li class="treeview" ng-class="{active : expandNode == 'system'}">
             <a href="javascript: void(0);">
                 <i class="fa fa-cogs"></i>
-                <span>系统管理</span>
+                <span translate="SIDEBAR.MENU.SYS_ADMIN">系统管理</span>
                 <span class="pull-right-container">
                     <i class="fa fa-angle-left pull-right"></i>
                 </span>
             </a>
             <ul class="treeview-menu">
-                <li ui-sref-active="active"><a ui-sref="ngAdminLTE.user"><i class="fa fa-user"></i>用户</a></li>
+                <li ui-sref-active="active"><a ui-sref="ngAdminLTE.user"><i class="fa fa-user"></i><span translate="SIDEBAR.MENU.USER"></span></a></li>
             </ul>
         </li>
     </ul>

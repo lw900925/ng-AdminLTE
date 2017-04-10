@@ -1,8 +1,23 @@
 {
   "LANGUAGE": "zh_CN",
   "DATA_TABLES": {
-    "LANGUAGE_URL": "lib/DataTables-1.10.13/i18n/lang-zh-CN.json"
+    "LANGUAGE_URL": "lib/DataTables-1.10.13/i18n/lang-zh-CN.json",
+    "EDITOR_BUTTONS": {
+      "CREATE": "新建",
+      "EDIT": "编辑",
+      "DELETE": "删除",
+      "REFRESH": "刷新"
+    }
   },
+
+  "SIDEBAR": {
+    "MENU": {
+      "DASHBOARD": "仪表盘",
+      "SYS_ADMIN": "系统管理",
+      "USER": "用户"
+    }
+  },
+
   "LOGIN": {
     "TITLE": "登录",
     "BOX_MESSAGE": "登录后开始会话",
@@ -15,6 +30,7 @@
     "FORGOT_PASSWORD": "忘记密码",
     "REGISTER": "注册新用户"
   },
+
   "USER": {
     "TITLE": "用户管理",
     "TABLE_HEADER": {

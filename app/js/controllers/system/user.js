@@ -27,9 +27,9 @@ ngAdminLTEApp.controller('UserController', function ($scope, Constants, $transla
                 info: false
             },
             buttons: [
-                { extend: 'create', editor: editor, text: '新建'},
-                { extend: 'edit', editor: editor, text: '编辑'},
-                { extend: 'remove', editor: editor, text: '删除'},
+                { extend: 'create', editor: editor, text: transactions['DATA_TABLES.EDITOR_BUTTONS.CREATE'] },
+                { extend: 'edit', editor: editor, text: transactions['DATA_TABLES.EDITOR_BUTTONS.EDIT'] },
+                { extend: 'remove', editor: editor, text: transactions['DATA_TABLES.EDITOR_BUTTONS.DELETE'] }
             ],
             language: {
                 url: transactions['DATA_TABLES.LANGUAGE_URL']

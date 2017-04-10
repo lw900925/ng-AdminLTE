@@ -20,11 +20,11 @@ ngAdminLTEApp.config(['$stateProvider', '$urlRouterProvider', '$locationProvider
         // 路由列表
         $stateProvider.state('ngAdminLTE', {
             url: '/',
-            templateUrl: 'layout.html'
+            templateUrl: 'partials/layout.html'
 
         }).state('login', {
             url: '/login',
-            templateUrl: 'login.html',
+            templateUrl: 'partials/login.html',
             controller: 'LoginController'
 
         }).state('ngAdminLTE.dashboard', {

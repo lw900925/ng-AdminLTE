@@ -1,8 +1,23 @@
 {
   "LANGUAGE": "en_US",
   "DATA_TABLES": {
-    "LANGUAGE_URL": "lib/DataTables-1.10.13/i18n/lang-en-US.json"
+    "LANGUAGE_URL": "lib/DataTables-1.10.13/i18n/lang-en-US.json",
+    "EDITOR_BUTTONS": {
+      "CREATE": "New",
+      "EDIT": "Edit",
+      "DELETE": "Delete",
+      "REFRESH": "Refresh"
+    }
   },
+
+  "SIDEBAR": {
+    "MENU": {
+      "DASHBOARD": "Dashboard",
+      "SYS_ADMIN": "System Management",
+      "USER": "User"
+    }
+  },
+
   "LOGIN": {
     "TITLE": "Login",
     "BOX_MESSAGE": "Sign in to start your session",
@@ -15,6 +30,7 @@
     "FORGOT_PASSWORD": "I forgot my password",
     "REGISTER": "Register a new membership"
   },
+
   "USER": {
     "TITLE": "User Management",
     "TABLE_HEADER": {
