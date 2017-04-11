@@ -21,8 +21,7 @@ ngAdminLTEApp.controller('UserController', function ($scope, Constants, DTOption
 
     var dataSource = 'http://l-lin.github.io/angular-datatables/archives/data.json';
 
-    var vm = this;
-    vm.dtOptions = DTOptionsBuilder.fromSource(dataSource)
+    $scope.dtOptions = DTOptionsBuilder.fromSource(dataSource)
         .withPaginationType('full_numbers')
         .withLanguageSource('lib/DataTables-1.10.13/i18n/lang-zh-CN.json')
         .withDOM(Constants.DataTable.Dom)
@@ -41,7 +40,7 @@ ngAdminLTEApp.controller('UserController', function ($scope, Constants, DTOption
             info: false
         });
 
-    vm.dtColumns = [
+    $scope.dtColumns = [
         DTColumnBuilder.newColumn('id').withTitle('ID'),
         DTColumnBuilder.newColumn('firstName').withTitle('First name'),
         DTColumnBuilder.newColumn('lastName').withTitle('Last name')
