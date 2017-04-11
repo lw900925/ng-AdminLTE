@@ -23,7 +23,7 @@ gulp.task('clean', function () {
 
 // 打包html
 gulp.task('html', function () {
-    return gulp.src('app/**/*.html')
+    return gulp.src('src/**/*.html')
         .pipe(htmlmin({
             removeComments: true
         }))
@@ -32,20 +32,20 @@ gulp.task('html', function () {
 
 // 打包第三方依赖
 gulp.task('lib', function () {
-    return gulp.src('app/lib/**')
+    return gulp.src('src/lib/**')
         .pipe(gulp.dest('dist/lib'));
 });
 
 // 打包图片
 gulp.task('image', function () {
-    return gulp.src('app/img/**')
+    return gulp.src('src/img/**')
         .pipe(imagemin())
         .pipe(gulp.dest('dist/img'));
 });
 
 // 打包并压缩样式文件
 gulp.task('style', function () {
-    return gulp.src('app/css/**')
+    return gulp.src('src/css/**')
         .pipe(concat('style.css'))              // 将多个css文件合并为一个，并重命名为style.css
         .pipe(minifycss())                      // 压缩css文件
         .pipe(gulp.dest('dist/css'));
@@ -53,7 +53,7 @@ gulp.task('style', function () {
 
 // 压缩javascript
 gulp.task('script', function () {
-    return gulp.src('app/js/**/*.js')
+    return gulp.src('src/js/**/*.js')
         //.pipe(jshint('.jshintrc'))              // 根据.jshintrc文件中定义的规则校验javascript
         //.pipe(jshint.reporter('default'))
         .pipe(gulp.dest('dist/js'))
@@ -62,24 +62,17 @@ gulp.task('script', function () {
         .pipe(gulp.dest('dist/js'));
 });
 
-// 拷贝国际化资源文件
-gulp.task('i18n', function () {
-    return gulp.src('app/i18n/**')
-        .pipe(gulp.dest('dist/i18n'));
-});
-
 // 构建项目
 gulp.task('build', ['clean'], function () {
-    return gulp.start('html', 'lib', 'image', 'style', 'script', 'i18n');
+    return gulp.start('html', 'lib', 'image', 'style', 'script');
 });
 
 // 监听本地文件改动，自动构建
 gulp.task('watch', ['build'], function () {
-    gulp.watch('app/css/**/*.css', ['style']);
-    gulp.watch('app/js/**/*.js', ['script']);
-    gulp.watch('app/**/*.html', ['html']);
-    gulp.watch('app/img/**', ['image']);
-    gulp.watch('app/i18n/*.json', ['i18n']);
+    gulp.watch('src/css/**/*.css', ['style']);
+    gulp.watch('src/js/**/*.js', ['script']);
+    gulp.watch('src/**/*.html', ['html']);
+    gulp.watch('src/img/**', ['image']);
 });
 
 // 本地运行web项目
@@ -104,7 +97,6 @@ gulp.task('help', function () {
     console.log('   gulp image      压缩图片');
     console.log('   gulp style      压缩css文件');
     console.log('   gulp script     压缩js文件');
-    console.log('   gulp i18n       拷贝国际化资源文件');
     console.log('   gulp build      构建项目');
     console.log('   gulp watch      文件监控打包');
     console.log('   gulp server     本地运行');

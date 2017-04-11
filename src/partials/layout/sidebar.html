@@ -1,0 +1,48 @@
+<!-- sidebar: style can be found in sidebar.less -->
+<section class="sidebar">
+    <!-- Sidebar user panel -->
+    <div class="user-panel">
+        <div class="pull-left image">
+            <img src="lib/AdminLTE/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+            <p>刘伟</p>
+            <a href="javascript:void(0)"><i class="fa fa-circle text-success"></i> Online</a>
+        </div>
+    </div>
+    <!-- search form -->
+    <form action="javascript:void(0)" method="get" class="sidebar-form">
+        <div class="input-group">
+            <input type="text" name="q" class="form-control" placeholder="Search...">
+            <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                    <i class="fa fa-search"></i>
+                </button>
+            </span>
+        </div>
+    </form>
+    <!-- /.search form -->
+
+    <!-- sidebar menu: : style can be found in sidebar.less -->
+    <ul class="sidebar-menu">
+        <li class="header">AdminLTE</li>
+        <li ui-sref-active="active">
+            <a ui-sref="ngAdminLTE.dashboard">
+                <i class="fa fa-dashboard"></i> <span>仪表盘</span><span class="pull-right-container"></span>
+            </a>
+        </li>
+        <li class="treeview" ng-class="{active : expandNode == 'system'}">
+            <a href="javascript: void(0);">
+                <i class="fa fa-cogs"></i>
+                <span>系统管理</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+                <li ui-sref-active="active"><a ui-sref="ngAdminLTE.user"><i class="fa fa-user"></i>用户</a></li>
+            </ul>
+        </li>
+    </ul>
+</section>
+<!-- /.sidebar -->
