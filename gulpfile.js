@@ -91,16 +91,15 @@ gulp.task('default', function () {
 
 // 帮助信息
 gulp.task('help', function () {
-    console.log('   gulp clean      清理dist目录');
-    console.log('   gulp html       压缩html文件');
-    console.log('   gulp lib        拷贝第三方依赖');
-    console.log('   gulp image      压缩图片');
-    console.log('   gulp style      压缩css文件');
-    console.log('   gulp script     压缩js文件');
-    console.log('   gulp build      构建项目');
-    console.log('   gulp watch      文件监控打包');
-    console.log('   gulp server     本地运行');
+    console.log('--------- gulp命令参考手册 ---------');
+    console.log('gulp clean      清理dist目录');
+    console.log('gulp html       压缩html文件');
+    console.log('gulp lib        拷贝第三方依赖');
+    console.log('gulp image      压缩图片');
+    console.log('gulp style      压缩css文件');
+    console.log('gulp script     压缩js文件');
+    console.log('gulp build      构建项目');
+    console.log('gulp watch      文件监控打包');
+    console.log('gulp server     本地运行');
 });
-
-
 

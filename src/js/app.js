@@ -9,10 +9,10 @@ var ngAdminLTEApp = angular.module('ngAdminLTEApp', [
     'ngStorage',
     'ui.router',
     'datatables',
+    'datatables.bootstrap',
     'datatables.buttons',
     'datatables.select',
-    'satellizer',
-    'ngAdminLTEResources'
+    'satellizer'
 ]);
 
 // Angular ui-router

@@ -4,7 +4,7 @@
 ngAdminLTEApp.controller('UserController', function ($scope, Constants, DTOptionsBuilder, DTColumnBuilder) {
     $scope.resetSidebar('system');
 
-    var editor = new $.fn.dataTable.Editor({
+    /*var editor = new $.fn.dataTable.Editor({
         ajax: '/user',
         table: '#user',
         idSrc:  'id',
@@ -17,13 +17,16 @@ ngAdminLTEApp.controller('UserController', function ($scope, Constants, DTOption
 
     }).on('open', function (event, main, action) {
 
-    });
+    });*/
 
     var dataSource = 'http://l-lin.github.io/angular-datatables/archives/data.json';
 
     $scope.dtOptions = DTOptionsBuilder.fromSource(dataSource)
         .withPaginationType('full_numbers')
         .withLanguageSource('lib/DataTables-1.10.13/i18n/lang-zh-CN.json')
+        .withBootstrap()
+        .withOption('responsive', true)
+        .withOption()
         .withDOM(Constants.DataTable.Dom)
         .withButtons([
             {
