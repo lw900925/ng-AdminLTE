@@ -12,6 +12,7 @@ var ngAdminLTEApp = angular.module('ngAdminLTEApp', [
     'datatables.bootstrap',
     'datatables.buttons',
     'datatables.select',
+    'datatables.editor',
     'satellizer'
 ]);
 
