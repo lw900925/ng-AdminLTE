@@ -67,7 +67,7 @@ ngAdminLTEApp.config(['$stateProvider', '$urlRouterProvider', '$locationProvider
     // ---------- 监听路由状态变化 ----------
     $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
         // 如果是登录页面，不做任何操作
-        if (toState.name == 'login') {
+        if (toState.name === 'login') {
             return;
         }
 
