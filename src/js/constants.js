@@ -52,5 +52,9 @@ ngAdminLTEApp.constant('Constants', {
                 }
             }
         }
+    },
+
+    Cookie: {
+        AccessToken: 'ngAdminLTE_access_token'
     }
 });

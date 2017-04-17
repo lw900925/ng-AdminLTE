@@ -7,6 +7,7 @@ var ngAdminLTEApp = angular.module('ngAdminLTEApp', [
     'ngCookies',
     'ngSanitize',
     'ngStorage',
+    'ngMessages',
     'ui.router',
     'datatables',
     'datatables.bootstrap',
@@ -62,8 +63,20 @@ ngAdminLTEApp.config(['$stateProvider', '$urlRouterProvider', '$locationProvider
 }])
 
 // Angular run
-.run(['$rootScope', '$location', '$templateCache', function ($rootScope, $location, $templateCache) {
-    // 监听路由状态是否发生变化
+.run(['$rootScope', '$location', '$templateCache', '$state', '$cookieStore', 'Constants', function ($rootScope, $location, $templateCache, $state, $cookieStore, Constants) {
+    // ---------- 监听路由状态变化 ----------
+    $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
+        // 如果是登录页面，不做任何操作
+        if (toState.name == 'login') {
+            return;
+        }
+
+        // 如果Cookie里面没有登陆信息，就跳转到登陆页面
+        if (angular.isUndefined($cookieStore.get(Constants.Cookie.AccessToken))) {
+            event.preventDefault();
+            $state.go("login");
+        }
+    });
     $rootScope.$on('$stateChangeSuccess', function ($rootScope) {
         // 清空模板缓存
         $templateCache.removeAll();

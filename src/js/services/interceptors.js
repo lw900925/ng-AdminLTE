@@ -16,9 +16,6 @@ ngAdminLTEApp.config(['$httpProvider', function ($httpProvider) {
  * @author liuwei
  */
 ngAdminLTEApp.factory('authInterceptor', ['$cookieStore', '$q', function ($cookieStore, $q) {
-    // 判断Cookie中是否有登陆信息
-
-
     return {
         response: function (response) {
 
