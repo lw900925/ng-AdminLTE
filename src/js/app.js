@@ -9,6 +9,7 @@ var ngAdminLTEApp = angular.module('ngAdminLTEApp', [
     'ngStorage',
     'ngMessages',
     'ui.router',
+    'ui.select2',
     'datatables',
     'datatables.bootstrap',
     'datatables.buttons',
