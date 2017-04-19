@@ -2,7 +2,7 @@
  * Created by liuwei on 2017/4/11.
  */
 
-ngAdminLTEApp.controller('MainController', function ($scope, $rootScope) {
+ngAdminLTEApp.controller('MainController', function ($scope, $rootScope, $animate) {
     // 重设左侧导航栏样式
     $scope.resetSidebar = function(expandNode) {
         $scope.expandNode = expandNode;
@@ -13,6 +13,4 @@ ngAdminLTEApp.controller('MainController', function ($scope, $rootScope) {
         // 重设左侧导航栏高度
         $.AdminLTE.layout.fix();
     });
-
-    $('body').addClass('skin-blue sidebar-mini');
 });
