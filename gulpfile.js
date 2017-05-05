@@ -54,8 +54,9 @@ gulp.task('style', function () {
 // 压缩javascript
 gulp.task('script', function () {
     return gulp.src('src/js/**/*.js')
-        //.pipe(jshint('.jshintrc'))              // 根据.jshintrc文件中定义的规则校验javascript
+        //.pipe(jshint('.jshintrc'))            // 根据.jshintrc文件中定义的规则校验javascript
         //.pipe(jshint.reporter('default'))
+        .pipe(concat('app.min.js'))             // 合并javascript文件，重命名为app.min.js
         .pipe(gulp.dest('dist/js'))
         .pipe(ngAnnotate({ single_quotes: true }))
         .pipe(uglify())                         // 压缩js文件
