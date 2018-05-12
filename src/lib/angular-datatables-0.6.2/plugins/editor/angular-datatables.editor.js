@@ -6,8 +6,11 @@
  * angular-datatables editor插件
  *
  * 该插件需要依赖angular-datatables模块才能运行，请确保正确引入了angular-datatables模块。
+ * This plugin require angular-datatables module, make sure you import angular-datatables.
  *
- * @author liuwei
+ * @author liuwei 
+ *         Email: lw900925@163.com
+ *         GitHub: https://github.com/lw900925
  * @version 1.0.0
  */
 if (typeof module !== "undefined" && typeof exports !== "undefined" && module.exports === exports) {
